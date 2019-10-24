@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Game Over!"
+            android:textSize="30sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/gameResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:freezesText="true"
+            android:text="temp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gameResult"
+            android:layout_marginTop="40dp"
+            android:text="Would you like to save this game?"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/ifYesField"
+            android:text=""
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/ifYesField"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:text="If yes - enter a game name:"
+            android:textSize="12sp"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_name">
+
+            <Button
+                android:id="@+id/Yes_button"
+                style="@style/mainButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/header"
+                android:layout_marginLeft="10dp"
+                android:text="Yes" />
+
+            <Button
+                android:id="@+id/no_button"
+                style="@style/mainButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/header"
+                android:layout_marginLeft="10dp"
+                android:text="No" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
